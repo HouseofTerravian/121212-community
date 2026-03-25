@@ -1,11 +1,12 @@
 {
+  "framework": "nextjs",
   "rewrites": [
     {
       "source": "/(.*)",
       "has": [
         { "type": "host", "value": "(?<city>(?!www$)[^.]+)\\.121212\\.community" }
       ],
-      "destination": "/hub.html"
+      "destination": "/hub/:city"
     }
   ]
 }
